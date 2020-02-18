@@ -1,0 +1,55 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
+
+
+.header {
+  height: 10vh;
+  padding-top: 0px;
+  background-color: white;
+  z-index: 2;
+}
+
+.navbar {
+  position: fixed;
+  padding-right: 0px;
+  padding-top: 100px;
+  font-size: 40px;
+
+}
+
+.navbar a {
+  padding-left: 5vh;
+  padding-right: 5vh;
+  color: black;
+  text-decoration-style: none;
+  text-decoration: none;
+
+}
+.navbar a:hover {
+  padding-left: 5vh;
+  padding-right: 5vh;
+  color: gray;
+  text-decoration-style: none;
+  text-decoration: none;
+
+}
+
+.logo {
+  position: fixed;
+  z-index: 1;
+
+}
+
+.logo img {
+  height: 600px;
+  width: auto;
+
+}
+
+.section {
+  position: relative;
+  padding-top: 500px;
+  font-size: 200px;
+}
