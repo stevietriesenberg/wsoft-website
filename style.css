@@ -51,20 +51,33 @@ li a:hover {
 
 
 .content {
-  position: absolute;
+  position: relative;
   background-color: green;
   width: inherit;
-  position: relative;
-  padding-top: 20vh;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-bottom: 100px;
+  height: 600px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 10vh;
 }
 
 
 
-.section {
-  position: relative;
+.section-left {
+  position: absolute;
   background-color: blue;
+  margin-top: 5vh;
+  margin-left: 2%;
+  margin-right: 52%;
+  width: 46%;
+  height: 400px;
+}
 
+.section-right {
+  position: absolute;
+  background-color: red;
+  margin-top: 5vh;
+  margin-left: 52%;
+  margin-right: 2%;
+  width: 46%;
+  height: 400px;
 }
