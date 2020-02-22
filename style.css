@@ -3,53 +3,68 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
 AOS.init();
 
-
-.header {
-  height: 10vh;
-  padding-top: 0px;
-  background-color: white;
-  z-index: 2;
+.body {
+  width: 100%;
 }
 
-.navbar {
-  position: fixed;
-  padding-right: 0px;
-  padding-top: 100px;
+ul {
+  list-style-type: none;
+  line-height: 20vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: right;
   font-size: 40px;
-
 }
 
-.navbar a {
-  padding-left: 5vh;
-  padding-right: 5vh;
+li a {
+  display: block;
   color: black;
-  text-decoration-style: none;
+  text-align: center;
+  padding: 40px 40px;
   text-decoration: none;
-
 }
-.navbar a:hover {
-  padding-left: 5vh;
-  padding-right: 5vh;
+
+li a:hover {
   color: gray;
-  text-decoration-style: none;
+}
+
+
+.left {
+  float: left;
+}
+
+.left a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 40px 40px;
+  padding-right: 0px;
   text-decoration: none;
-
 }
 
-.logo {
-  position: fixed;
-  z-index: 1;
 
+
+
+
+.content {
+  position: absolute;
+  background-color: green;
+  width: inherit;
+  position: relative;
+  padding-top: 20vh;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 100px;
 }
 
-.logo img {
-  height: 600px;
-  width: auto;
 
-}
 
 .section {
   position: relative;
-  padding-top: 500px;
-  font-size: 200px;
+  background-color: blue;
+
 }
