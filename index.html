@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -10,62 +11,68 @@
   </head>
 
   <body>
-    <!-- <div class="header">
-      <div class="navbar">
-        <a href="/about">About</a>
-        <a href="/about">The Team</a>
-        <a href="/about">Sponsor</a>
-      </div>
-
-      <div class="logo" data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
-        <img src="images/wsoft_studio_logo_cropped.jpg">
-        WolverineSoft
-      </div>
-    </div> -->
 
     <ul>
-      <li class="left" style="padding-bottom:0px"><a href="#home"><img style="height: 20vh" src="images/title-logo.png"></a><li>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#About">About</a></li>
-      <li><a href="#Contact">Contact</a></li>
-      <li><a href="#Sponsor">Sponsor</a></li>
+      <li class="left" style="padding-bottom:0px"><a href="index.html"><img style="height: 15vh" src="images/title-logo.png"></a><li>
+      <li><a href="sponsor.html">Sponsor</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="#team">The Team</a></li>
+      <li><a href="#games">Games</a></li>
+      <li><a href="#about">About</a></li>
+
     </ul>
 
     <div class="content">
 
-      <div class="section-left">
-        Hi
+      <div class="row">
+        <div class="section-left">
+          The University of Michigan's<br>
+          student run, non-profit<br>
+          game development studio.<br>
+        </div>
+
+        <div class="section-right">
+
+        </div>
       </div>
-      
-      <div class="section-right">
-        Hi
+      <br>
+
+      <div class="row">
+        <div class="section-full">
+          Something about games, or a link to "Sponsor" page.
+        </div>
       </div>
+
+      <div class="row">
+        <div class="section-full">
+          Something else.  Basically, you can put in as many rows as you like, with whatever "split" configuration for photos, text, links, etc.
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="section-full-invert">
+          Can also change the background/text color here, which might be cool for a games page (concept art background with "Games" in white or something).
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="section-full">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+        </div>
+      </div>
+    </content>
 
     </div>
 
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
 
 
-    <script>
-      function navbar() {
-        if (document.body.scrollTop > 100) {
-          $('#navbar').stop().animate({"margin-top": '-100'});
-        } else {
-          $('#navbar').stop().animate({"margin-top": '0'});
-        }
-      }
-      $(window).scroll(function () {
-        navbar();
-      });
 
-      $(document).ready(function () {
-        navbar();
-      });
 
-    </script>
+
+
   </body>
 </html>
