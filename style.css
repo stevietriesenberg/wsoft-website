@@ -13,6 +13,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  z-index: 2
 }
 
 li {
@@ -68,6 +69,77 @@ li a:hover {
 }
 
 
+
+/* Dropdown Button */
+.dropbtn {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 40px 40px;
+  text-decoration: none;
+
+  opacity: 1.0;
+  transition: opacity .3s ease-in-out;
+  -moz-transition: opacity .3s ease-in-out;
+  -webkit-transition: opacity .3s ease-in-out;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 10;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: gray}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  opacity: 0.6;
+  transition: opacity .3s ease-in-out;
+  -moz-transition: opacity .3s ease-in-out;
+  -webkit-transition: opacity .3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .content {
   background-color: white;
   width: inherit;
@@ -117,6 +189,7 @@ li a:hover {
   color: rgb(30, 37, 74);
   font-size: 6.5vw;
   text-align: left;
+
 }
 
 
