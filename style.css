@@ -3,11 +3,18 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
 AOS.init();
 
+@font-face {
+  font-family: Rodina-Regular;
+  src: url('font/Rodina-Regular-Regular.woff') format("woff");
+}
+
 .body {
   width: 100%;
+  font-family: Rodina-Regular;
 }
 
 ul {
+  font-family: Rodina-Regular;
   list-style-type: none;
   line-height: 15vh;
   margin: 0;
@@ -18,14 +25,15 @@ ul {
 
 li {
   float: right;
-  font-size: 40px;
+  font-size: 3.2vh;
 }
 
 li a {
+  font-family: Rodina-Regular, sans-serif;
   display: block;
   color: black;
   text-align: center;
-  padding: 40px 40px;
+  padding: 3.2vh 3.2vh;
   text-decoration: none;
 
   opacity: 1.0;
@@ -35,6 +43,7 @@ li a {
 }
 
 li a:hover {
+  font-family: Rodina-Regular, sans-serif;
   opacity: 0.6;
   transition: opacity .3s ease-in-out;
   -moz-transition: opacity .3s ease-in-out;
@@ -47,10 +56,11 @@ li a:hover {
 }
 
 .left a {
+  font-family: Rodina-Regular, sans-serif;
   display: block;
   color: black;
   text-align: center;
-  padding: 40px 40px;
+  padding: 3.2vh 3.2vh;
   padding-right: 0px;
   text-decoration: none;
 
@@ -62,6 +72,7 @@ li a:hover {
 }
 
 .left a:hover {
+  font-family: Rodina-Regular, sans-serif;
   opacity: 0.6;
   transition: opacity .3s ease-in-out;
   -moz-transition: opacity .3s ease-in-out;
@@ -72,10 +83,11 @@ li a:hover {
 
 /* Dropdown Button */
 .dropbtn {
+  font-family: Rodina-Regular, sans-serif;
   display: block;
   color: black;
   text-align: center;
-  padding: 40px 40px;
+  padding: 3.2vh 3.2vh;
   text-decoration: none;
 
   opacity: 1.0;
@@ -94,6 +106,7 @@ li a:hover {
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
+  font-family: Rodina-Regular, sans-serif;
   display: none;
   position: absolute;
   background-color: #f1f1f1;
@@ -103,6 +116,7 @@ li a:hover {
 
 /* Links inside the dropdown */
 .dropdown-content a {
+  font-family: Rodina-Regular, sans-serif;
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -154,7 +168,6 @@ li a:hover {
   width: 100%;
   margin-bottom: 10vh;
   margin-top: 10vh;
-
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -164,18 +177,15 @@ li a:hover {
 
 
 .section-left {
-
   display: inline-block;
-
   width: 45%;
   height: inherit;
   margin-right: 2%;
 
   background-color: white;
   color: rgb(30, 37, 74);
-  font-size: 6.5vw;
   text-align: left;
-
+  font-family: Rodina-Regular, sans-serif;
 }
 
 .section-right {
@@ -183,15 +193,14 @@ li a:hover {
   background-color: rgb(211,211,211);
   width: 45%;
   margin-left: 2%;
-  height: 400px;
-
-  color: rgb(30, 37, 74);
-  font-size: 6.5vw;
   text-align: left;
-
+  font-family: Rodina-Regular, sans-serif;
 }
 
-
+.section-right img {
+  width: 100%;
+  height: auto;
+}
 
 .section-full {
   background-color: white;
@@ -205,8 +214,55 @@ li a:hover {
   color: rgb(30, 37, 74);
   font-size: 6.5vw;
   text-align: center;
-
+  font-family: Rodina-Regular, sans-serif;
 }
+
+
+.section-full-sponsor {
+  margin-top: 5vh;
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 96%;
+  height: inherit;
+  display: block;
+  background-color: none;
+  color: white;
+  font-size: 6.5vw;
+  text-align: center;
+  font-family: Rodina-Regular, sans-serif;
+}
+
+.blur {
+  position: relative;
+  text-align: center;
+  color: white;
+  z-index: 9999;
+}
+
+.blur:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  padding-top: 50.39%; /* (img-height / img-width * container-width) */
+              /* (853 / 1280 * 100) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: contain;
+  background-image: url("images/studio-picture-crop.jpg");
+  background-repeat: no-repeat;
+  filter: blur(2px);
+  z-index:-1;
+}
+
+.blur span {
+  position:relative;
+  z-index:1;
+}
+
+
 
 .section-full-invert {
   background-color: rgb(30, 37, 74);
@@ -220,20 +276,35 @@ li a:hover {
   color: white;
   font-size: 6.5vw;
   text-align: center;
-
+  font-family: Rodina-Regular, sans-serif;
 }
 
 h {
   color: rgb(30, 37, 74);
-  font-size: 6.5vw;
+  font-size: 4vw;
   text-align: center;
+  font-family: Rodina-Regular, sans-serif;
 }
 
 p {
   color: rgb(30, 37, 74);
-  font-size: 3.8vw;
+  font-size: 2.8vw;
   text-align: center;
+  font-family: Rodina-Regular, sans-serif;
 }
+
+.banner {
+  height: 200px;
+  display: inline;
+  margin-left: 0px;
+}
+
+
+
+
+
+
+
 
 
 
