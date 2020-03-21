@@ -74,9 +74,7 @@
   font-family: Open-Sans, sans-serif;;
 }
 
-
-
-button {
+.donate {
   background-color: white;
   color: rgb(30, 37, 74);;
   font-family: Rodina-Regular, sans-serif;
@@ -89,18 +87,26 @@ button {
   padding-bottom: 1vw;
   margin-bottom: 2vw;
 
+  box-shadow: 0px 0px 0px 3px rgb(30, 37, 74);
+
+  border: 3px;
   border-color: rgb(30, 37, 74);
   border-radius: 25%;
   border-width: 3px;
 
   transition-duration: 0.4s;
+
+  text-decoration: none;
+
 }
 
-button:hover {
+
+.donate:hover {
   background-color: rgb(30, 37, 74);
   color: white;
   opacity: 1.0;
   transition-duration: 0.4s;
+  text-decoration: none;
 }
 
 .email {
