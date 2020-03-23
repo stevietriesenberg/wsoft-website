@@ -156,6 +156,10 @@ h2 {
   font-family: Open-Sans, sans-serif;
 }
 
+h2 a {
+  color: rgb(101, 110, 162);  
+}
+
 p a {
   color: rgb(101, 110, 162);
 }
